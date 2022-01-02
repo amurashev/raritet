@@ -1,0 +1,85 @@
+.container {
+  width: 980px;
+  margin: 0 auto;
+}
+
+.topBox {
+  display: flex;
+  align-items: center;
+  padding: 24px 0px;
+}
+
+.logoBox {
+  flex-grow: 1;
+}
+
+.logo {
+  color: #4AC246;
+  font-family: 'PT Sans Caption', cursive;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 0.4;
+  text-shadow: rgb(0 0 0 / 70%) 1px 1px 1px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+
+.menuItem {
+  padding: 0 12px;
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  color: #6c6c6c;
+  font-family: 'PT Sans Caption', sans-serif;
+  text-shadow: rgb(0 0 0 / 14%) 1px 1px 2px;
+  font-weight: bold;
+}
+
+.h1Box {
+  background: url(/bg.jpg) 0 0 no-repeat;
+}
+
+.h1BoxInner {
+  padding: 48px 0;
+}
+
+.h1 {
+  font-size: 70px;
+  line-height: 0.96;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'PT Sans Caption', sans-serif;
+  text-shadow: rgb(0 0 0 / 90%) 1px 1px 2px;
+}
+
+
+.footerBox {
+  padding: 24px 0;
+}
+
+.footerLine1 {
+  display: flex;
+  align-items: flex-start;
+  line-height: 1.4;
+}
+
+.footerLine2 {
+  padding-top: 12px;
+  margin-top: 12px;
+  text-align: center;
+  border-top: 1px solid #666666;
+}
+
+.footerItem1 {
+  flex: 1;
+  text-align: right;
+}
+
+.footerItem2 {
+  flex: 1;
+  margin-left: 24px;
+}
