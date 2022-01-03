@@ -1,9 +1,15 @@
-import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
+import Link from "next/link";
+
 import styles from "../styles/Layout.module.css";
 
-const Layout: NextPage = ({ children, h1 }) => {
+const Layout = ({
+  children,
+  h1,
+}: {
+  children: React.ReactChild | React.ReactChild[];
+  h1: string
+}) => {
   return (
     <div>
       <Head>
@@ -33,9 +39,9 @@ const Layout: NextPage = ({ children, h1 }) => {
             </div>
             <ul className={styles.menu}>
               <li>
-                <a href="/" className={styles.menuItem}>
-                  Главная
-                </a>
+                <Link href="/">
+                  <a className={styles.menuItem}>Главная</a>
+                </Link>
               </li>
               <li>
                 <a href="/price.xls" className={styles.menuItem}>
@@ -43,9 +49,11 @@ const Layout: NextPage = ({ children, h1 }) => {
                 </a>
               </li>
               <li>
-                <a href="/contacts" className={styles.menuItem}>
-                  Контакты
-                </a>
+                <Link href="/contacts">
+                  <a className={styles.menuItem}>
+                    Контакты
+                  </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -69,7 +77,7 @@ const Layout: NextPage = ({ children, h1 }) => {
           <div className={styles.footerBox}>
             <div className={styles.footerLine1}>
               <div className={styles.footerItem1}>
-                <div>ООО "Раритет"</div>
+                <div>ООО &quot;Раритет&quot;</div>
                 <div>г. Псков, ул. Народная, д.21, 2 этаж</div>
                 <div>(8112) 56-97-77, 56-72-22</div>
                 <div>пн-чт 09:00–17:30; пт 09:00–17:00</div>
@@ -78,13 +86,17 @@ const Layout: NextPage = ({ children, h1 }) => {
               <div className={styles.footerItem2}>
                 <ul>
                   <li>
-                    <a href="/">Главная</a>
+                    <Link href="/">
+                      <a>Главная</a>
+                    </Link>
                   </li>
                   <li>
                     <a href="/price.xls">Прайс</a>
                   </li>
                   <li>
-                    <a href="/contacts.php">Контакты</a>
+                    <Link href="/contacts">
+                      <a>Контакты</a>
+                    </Link>
                   </li>
                   <li>
                     <a href="mailto:raritetpskov@rambler.ru">
@@ -100,6 +112,17 @@ const Layout: NextPage = ({ children, h1 }) => {
           </div>
         </div>
       </footer>
+
+      <div>
+        <img
+          src="https://mc.yandex.ru/watch/20378650"
+          style={{
+            position: "absolute",
+            left: "-9999px",
+          }}
+          alt=""
+        />
+      </div>
     </div>
   );
 };

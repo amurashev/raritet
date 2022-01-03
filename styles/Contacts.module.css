@@ -1,1 +1,44 @@
+.box {
+  background: #ffffff;
+  box-shadow: 0 1px 5px rgb(150 150 150 / 50%);
+  margin-top: 32px;
+  margin-bottom: 32px;
+  position: relative;
+}
 
+.map {
+  height: 100%;
+  max-width: 980px;
+}
+
+.contacts {
+  padding: 30px;
+  position: absolute;
+  left: 70px;
+  top: 70px;
+  background-color: #111111;
+  width: 390px;
+  opacity: 0.86;
+  color: #ffffff;
+  box-shadow: 0 -1px 5px rgb(0 0 0 / 50%);
+  font-size: 19px;
+}
+
+.companyName {
+  font-weight: bold;
+  font-size: 23px;
+  text-shadow: rgb(255 255 255 / 24%) 1px 1px 4px;
+  margin-bottom: 12px;
+}
+
+.address {
+  margin-bottom: 12px;
+}
+
+.work {
+  margin-top: 12px;
+}
+
+.email {
+  margin-top: 12px;
+}

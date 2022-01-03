@@ -14,13 +14,15 @@ body {
   font-size: 16px;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
   box-sizing: border-box;
+}
+
+a {
+  color: #93CDF2;
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: rgb(255 255 255 / 24%) 1px 1px 3px;
 }
 
 ol, ul {
@@ -33,6 +35,7 @@ p {
   margin: 12px 8px;
   font-style: italic;
   line-height: 1.3;
+  color: #818181;
 }
 
 header {
@@ -42,20 +45,8 @@ header {
 	box-shadow: 0 1px 5px rgba(150,150,150,0.5);	
 }
 
-
 footer {
   width: 100%;
 	background: #11161B;
 	color:#ffffff;
-}
-
-footer a {
-  color: #93CDF2;
-  text-decoration: none;
-  font-weight: bold;
-  text-shadow: rgb(255 255 255 / 24%) 1px 1px 3px;
-}
-
-main {
-  
 }
